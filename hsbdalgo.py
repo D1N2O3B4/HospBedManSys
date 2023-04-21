@@ -1,4 +1,34 @@
-
+def get_priority(patient):
+    if patient["SELDOM_SICK"] == False:
+        if patient["CATEGORY"] == 'A':
+            if patient["AGE"] > 50 or patient["AGE"] < 18:
+                return 2000 + patient["AGE"]
+            return 1800 + patient["AGE"]
+        if patient["CATEGORY"] == 'B':
+            if patient["AGE"] > 50 or patient["AGE"] < 18:
+                return 1500 + patient["AGE"]
+            return 1300 + patient["AGE"]  
+        if patient["CATEGORY"] == 'C':
+            if patient["AGE"] > 50 or patient["AGE"] < 18:
+                return 1000 + patient["AGE"]
+            return 800 + patient["AGE"]
+            
+    else:
+        if patient["CATEGORY"] == "A":
+            if patient["AGE"] < 18:
+                return 1700 + patient["AGE"]
+            else:
+                return 1600 + patient["AGE"]
+        elif patient["CATEGORY"] == "B":
+            if patient["AGE"] < 18:
+                return 1200 + patient["AGE"]
+            else:
+                return 1100 + patient["AGE"]
+        else:
+            if patient["AGE"] < 18:
+                return 600 + patient["AGE"]
+            else:
+                return 400 + patient["AGE"]
 
 
 patient_list = [
