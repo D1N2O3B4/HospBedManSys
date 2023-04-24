@@ -37,8 +37,8 @@ patient_list = [
     {"ID":3,"CATEGORY":"A","AGE":67,"SELDOM_SICK":False},
     {"ID":4,"CATEGORY":"C","AGE":18,"SELDOM_SICK":False},
     {"ID":5,"CATEGORY":"C","AGE":9,"SELDOM_SICK":False},
-    {"ID":5,"CATEGORY":"A","AGE":12,"SELDOM_SICK":True},
-    {"ID":6,"CATEGORY":"A","AGE":45,"SELDOM_SICK":True}   
+    {"ID":6,"CATEGORY":"A","AGE":12,"SELDOM_SICK":True},
+    {"ID":7,"CATEGORY":"A","AGE":45,"SELDOM_SICK":True}   
 ]
 
 
